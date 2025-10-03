@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mí - Amancay Ramírez</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>AMANCAY RAMÍREZ</h1>
+            <p>Diseñadora Gráfica & Ilustradora</p>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="nav">
+            <a href="index.html">Portafolio</a>
+            <a href="about.html" class="active">Sobre mí</a>
+        </nav>
+
+        <!-- About Section -->
+        <section class="about">
+            <h2>Sobre mí</h2>
+            <p>Soy diseñadora gráfica con un enfoque en el codiseño con comunidades. Mezlo la ilustración junto al diseño para darle un sentido de originalidad a cada proyecto que realizo, con el fin de dejar una marca y también un sentido de pertenencia exlusivo para el cliente</p>
+            <p> Me especializo en entregar la información de manera creativa y atractiva, crear identidad a través del conocer al cliente. Ayudar en el mejor entendimiento de los procesos y la motivación para realizarlos.</p>
+            <p>Tengo experiencia en creación de logos, rediseño de espacios, prototipado de aplicaciones moviles y web.</p>
+            <p>Como intereses personales disfruto de tocar guitarra, flauta traversa y piano. Estoy constantemente dibujando para mejorar mis habilidades aplicables en el contexto de diseño.</p>
+        </section>
+
+
+                    <div> 
+  <canvas id="myChart"></canvas>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+ new Chart("myChart", {
+  type: 'bar',
+    data: {
+      labels: ['Julio', 'Agosto', 'Septiembre'],
+      datasets: [{
+        label: 'Horas practicando guitarra',
+        data: [60, 120, 80],
+         backgroundColor: [
+      'rgba(82, 51, 145, 0.7)',
+      'rgba(111, 63, 217, 0.7)',
+      'rgba(152, 126, 217, 0.7)'
+  ],
+      
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2025 Amancay Ramírez. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="#">Behance</a>
+                <a href="#">LinkedIn</a>
+    
+
+        </footer>
+    </div>
+</body>
+</html>
